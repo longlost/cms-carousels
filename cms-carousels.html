@@ -1,0 +1,49 @@
+
+<style>
+
+  :host {
+    display:          block;
+    padding:          16px;
+    min-height:       100vh;
+    background-color: var(--app-background-color);
+  }
+
+  iron-selector {
+    display:         flex;
+    justify-content: space-around;
+    margin:          32px 0px;
+  }
+
+  .buttons {
+    background-color: var(--app-background-color);
+  }
+
+  iron-selector .iron-selected {
+    background-color: var(--app-light-color);
+  }
+
+</style>
+
+
+<iron-selector>
+  <template is="dom-repeat" 
+  					items="[[_carousels]]" 
+  					as="name">
+    <paper-button class="buttons" 
+    							on-click="__carouselNameClicked" 
+    							raised>
+      [[name]]
+    </paper-button>
+  </template>
+</iron-selector>
+
+<iron-pages selected="[[_selected]]" 
+						attr-for-selected="carousel">
+  <template is="dom-repeat" 
+  					items="[[_carousels]]" 
+  					as="name">
+    <carousel-editor selected="[[_selected]]" 
+                     carousel="[[name]]">
+    </carousel-editor>
+  </template>
+</iron-pages>
