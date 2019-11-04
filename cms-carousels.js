@@ -7,9 +7,9 @@
  * @demo demo/index.html
  */
 import {
-  SpritefulElement, 
+  AppElement, 
   html
-}                  from '@spriteful/spriteful-element/spriteful-element.js';
+}                  from '@longlost/app-element/app-element.js';
 import {carousels} from 'app.config.js';
 import htmlString  from './cms-carousels.html';
 import './carousel-editor.js';
@@ -18,7 +18,7 @@ import '@polymer/iron-pages/iron-pages.js';
 import '@polymer/paper-button/paper-button.js';
 
 
-class SpritefulCmsCarousels extends SpritefulElement {
+class CmsCarousels extends AppElement {
   static get is() { return 'cms-carousels'; }
 
   static get template() {
@@ -58,4 +58,4 @@ class SpritefulCmsCarousels extends SpritefulElement {
 
 }
 
-window.customElements.define(SpritefulCmsCarousels.is, SpritefulCmsCarousels);
+window.customElements.define(CmsCarousels.is, CmsCarousels);
