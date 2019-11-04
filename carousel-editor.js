@@ -7,21 +7,21 @@
  * @demo demo/index.html
  */
 import {
-  SpritefulElement, 
+  AppElement, 
   html
-}                 from '@spriteful/spriteful-element/spriteful-element.js';
+}                 from '@longlost/app-element/app-element.js';
 import {
   isDisplayed, 
   message, 
   schedule
-}                 from '@spriteful/utils/utils.js';
+}                 from '@longlost/utils/utils.js';
 import htmlString from './carousel-editor.html';
-import services   from '@spriteful/services/services.js';
-import '@spriteful/app-icons/app-icons.js';
-import '@spriteful/app-modal/app-modal.js';
-import '@spriteful/app-spinner/app-spinner.js';
-import '@spriteful/drag-drop-list/drag-drop-list.js';
-import '@spriteful/drag-drop-files/drag-drop-files.js';
+import services   from '@longlost/services/services.js';
+import '@longlost/app-icons/app-icons.js';
+import '@longlost/app-modal/app-modal.js';
+import '@longlost/app-spinner/app-spinner.js';
+import '@longlost/drag-drop-list/drag-drop-list.js';
+import '@longlost/drag-drop-files/drag-drop-files.js';
 import '@polymer/iron-image/iron-image.js';
 import '@polymer/paper-button/paper-button.js';
 import '@polymer/paper-input/paper-input.js';
@@ -37,7 +37,7 @@ const dropIsOverDeleteArea = ({top, right, bottom, left, x, y}) => {
 const getNewFileName = filename => filename.split('.')[0];
 
 
-class SpritefulCmsCarouselEditor extends SpritefulElement {
+class CmsCarouselEditor extends AppElement {
   static get is() { return 'carousel-editor'; }
 
   static get template() {
@@ -407,4 +407,4 @@ class SpritefulCmsCarouselEditor extends SpritefulElement {
 
 }
 
-window.customElements.define(SpritefulCmsCarouselEditor.is, SpritefulCmsCarouselEditor);
+window.customElements.define(CmsCarouselEditor.is, CmsCarouselEditor);

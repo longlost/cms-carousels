@@ -1,5 +1,5 @@
 {
-  "name": "@spriteful/cms-carousels",
+  "name": "@longlost/cms-carousels",
   "version": "1.0.0",
   "description": "carousel content editor for cms",
   "main": "cms-carousels.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spriteful/cms-carousels.git"
+    "url": "git+https://github.com/longlost/cms-carousels.git"
   },
-  "author": "Spriteful spritefuldev@gmail.com",
+  "author": "Longlost Dev longlostdev@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spriteful/cms-carousels/issues"
+    "url": "https://github.com/longlost/cms-carousels/issues"
   },
-  "homepage": "https://github.com/spriteful/cms-carousels#readme",
+  "homepage": "https://github.com/longlost/cms-carousels#readme",
   "dependencies": {
     "@polymer/iron-image": "^3.0.1",
     "@polymer/iron-pages": "^3.0.1",
@@ -23,14 +23,14 @@
     "@polymer/paper-button": "^3.0.1",
     "@polymer/paper-input": "^3.0.1",
     "@polymer/polymer": "^3.1.0",
-    "@spriteful/app-icons": "^1.0.1",
-    "@spriteful/app-modal": "^1.0.0",
-    "@spriteful/app-spinner": "^1.0.0",
-    "@spriteful/drag-drop-files": "^1.0.0",
-    "@spriteful/drag-drop-list": "^1.0.0",
-    "@spriteful/services": "^2.1.3",
-    "@spriteful/spriteful-element": "^1.0.4",
-    "@spriteful/utils": "^1.1.6"
+    "@longlost/app-icons": "^1.0.1",
+    "@longlost/app-modal": "^1.0.0",
+    "@longlost/app-spinner": "^1.0.0",
+    "@longlost/drag-drop-files": "^1.0.0",
+    "@longlost/drag-drop-list": "^1.0.0",
+    "@longlost/services": "^2.1.3",
+    "@longlost/app-element": "^1.0.4",
+    "@longlost/utils": "^1.1.6"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.2",
